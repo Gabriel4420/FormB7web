@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  height: 739px;
+  align-items: center;
+  background-image: radial-gradient(rgb(116, 11, 98), rgb(57, 16, 80));
+  
+}
+
+header {
+  height: 150px;
+  color: white;
+  padding: 15px;
+  margin-top: -100px;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 10px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+header p{
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  text-align:center;
+  
+}
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  width: 500px;
+  color: white;
+  
+}
+
+form label{
+  font-family: 'Roboto', sans-serif;
+}
+
+form input {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  outline: 0px;
+  background-color: rgb(57, 16, 80);
+  border-radius: 25px;
+  color: white;
+  border: 2px solid rgb(6, 42, 51);
+}
+
+form input:focus {
+  border: 2px solid rgb(7, 205, 255);
+}
+
+form button {
+  padding: 15px;
+  background-color: rgb(7, 205, 255);
+  color: rgb(57, 16, 80);
+  font-weight: bold;
+  font-size: 26px;
+  width: 350px;
+  margin-left: 15%;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+form button:hover{
+  background-color: rgb(9, 179, 3);
+  color:white;
+}
+
+.imgExternal{
+  width:773px;
+  height:773px;
+  margin-left:700px;
+  margin-top:-773px;
+  float:left;
+  
+}
+
+/* *Pagina de Sucesso */
+
+
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 150px;
+  width: 80%;
+  height: 400px;
+  background-image: radial-gradient(rgb(10, 177, 10), rgb(42, 134, 42));
+  color: white;
+  border-radius: 800px;
+  border-top-right-radius: 0;
+  box-shadow: 20px 50px 10px #0000006b;
+}
+
+.success a {
+  font-size: 32px;
+  margin-left: 100px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.success a:hover {
+  text-decoration: inline;
+}
+
+.success img {
+  width: 300px;
+  height: 350px;
+  margin-left: -280px;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #0000006b;
+
+}
+
+/* * Responsivo */
+
+@media (max-width: 768px) {
+  .imgExternal{
+   display:none !important;
+  }
+
+  content{
+    width:550px;
+  }
+
+  form{
+    width:400px;
+  }
+
+  form button{
+    padding: 8px;
+    margin-left: 5%;
+  }
+
+
+}
